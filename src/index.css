@@ -1,0 +1,36 @@
+/* src/App.css */
+
+@tailwind utilities;
+@tailwind components;
+@tailwind base;
+
+.alphabet-tiles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+}
+
+#outputString {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
